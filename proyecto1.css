@@ -44,7 +44,9 @@
     order: 1;
 }
 .navbar_content{
-    
+    display: flex;
+    position: relative;
+       
 }
 .side-content{
     grid-column: 1/4;
