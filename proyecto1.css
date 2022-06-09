@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+.body{
+    font-family: 'Lato', sans-serif;  /*esto es para el tipo de letra que vamsos a utlilizar*/
+    height: 100vh; /*para poner 100% a nivel de ancho*/
+    margin: 0; /*quitamos el margen por defecto*/
+    overflow: hidden;/*para que no se salga cualquier elemento de nuestra pantalla*/
+
+}
+.page{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    position: relative;
+    height: 100%;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 20% 50% 30%;
+  /*  grid-template-areas: "nav  nav nav"
+                         "side content side"
+                         "footer footer footer";
+     */
+
+}
+.navbar{
+    background-color: antiquewhite;
+    display: flex;
+    position: relative;
+    grid-column: 1/4;
+}
+.navbar_content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    order: 1;
+}
+.navbar_content{
+    
+}
+.side-content{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: pink;
+}
+.main-content{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: yellow;
+    order:2;
+}
+
+.fouter-content{
+    background-color: olive;
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
